@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Dashboard.css">
+</head>
+
+<body>
+    <div class="containe-class">
+      
+        <div class="invest-amt">
+            <h1>Dashboard</h1>
+            <h2 id="para">Total Portfolio Value :$0</h3>
+        </div>
+        <div class="content">
+            <input type="text" placeholder="Assest Name" class="Input-text">
+            <input type="text" placeholder="Amoutn invested" class="Input-text">
+            <input type="text" placeholder="Current" class="Input-text">
+
+            <button id="Btn-btn" onclick="updateDashboard()">Add Investment</button>
+
+        </div>
+        <div id="list">
+            <ul id="lst-ul">
+                <li>Assest Name</li>
+                <li>Amount Invested</li>
+                <li>Current</li>
+                <li>% Change</li>
+            </ul>
+            
+        </div>
+        <div id="canvas">
+            <canvas id="canva"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
